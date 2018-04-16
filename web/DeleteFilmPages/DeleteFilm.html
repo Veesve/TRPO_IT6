@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding film</title>
+    <style>
+        @import url("../Main.css");
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+<h1 align="center">Adding film</h1>
+<hr>
+<aside>
+    <div>
+        <h2>Menu</h2>
+        <ui>
+            <li><a href="../AddFilmPages/AddFilm.html">Add film</a></li>
+            <li><a href="../DeleteFilmPages/DeleteFilm.html">Delete film</a></li>
+            <li><a href="../ViewListOfFilmsPages/ViewListOfFilms.jsp">View list of films</a></li>
+        </ui>
+    </div>
+</aside>
+<div>
+    <table border="0" align="center" cellpadding="10" cellspacing="5">
+        <div class="search">
+            <form action="../lab3/DeleteFilmServlet" method="GET">
+                <th>Title:</th><th>
+                <input type="text" name="title" placeholder="Silent Hill" pattern="^[A-Za-zА-Яа-яЁё0-9 ]{5+}" required>
+            </th><tr>
+                <th>
+                <td colspan="2">
+                    <center>
+                        <button type="submit" class="btn btn-outline-info">Submit</button>
+                    </center>
+                </td>
+            </form>
+        </div>
+    </table>
+</div>
+</body>
+</html>

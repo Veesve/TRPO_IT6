@@ -1,6 +1,7 @@
 package lab2;
 
 
+
 import com.google.gson.*;
 import lab2.jsonData.OceanData;
 import lab2.jsonData.SalnityData;
@@ -19,6 +20,7 @@ public class CustomJsonParser {
     public static void main(String[] args) throws Exception {
         //args[0] is relative path to JSON file. Might be configured by user if
         // laucnhed from terminal or changed in arguments
+        //src/main/resources/E05_aanderaa_all_1769_d432_5004.json to work with resources file
 
         String jsonString = readJsonFromFile(args[0]);
         Gson gson = new Gson();

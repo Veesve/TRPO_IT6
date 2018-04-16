@@ -24,10 +24,10 @@ public class DeleteFilmServlet extends HttpServlet {
             String filmTitle = request.getParameter("title");
             dao.delete(filmTitle);
             response.setStatus(response.SC_MOVED_TEMPORARILY);
-            response.setHeader("Location", String.format(REDIRECT_FORMAT, "DeleteFilmPages/DeleteFilmSuccess.html"));
+            response.setHeader("Location", String.format(REDIRECT_FORMAT, "/lab3/DeleteFilmPages/DeleteFilmSuccess.html"));
         }catch (Exception e) {
             response.setStatus(response.SC_MOVED_TEMPORARILY);
-            response.setHeader("Location", String.format(REDIRECT_FORMAT, "DeleteFilmPages/DeleteFilmFail.html"));
+            response.setHeader("Location", String.format(REDIRECT_FORMAT, "/lab3/DeleteFilmPages/DeleteFilmFail.html"));
             e.printStackTrace();
         }
     }

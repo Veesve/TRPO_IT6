@@ -13,7 +13,7 @@ import javax.servlet.http.*;
 import java.io.IOException;
 
 // Extend HttpServlet class
-@WebServlet("/AddingFilmServlet")
+@WebServlet("/lab3/AddingFilmServlet")
 public class AddingFilmServlet extends HttpServlet {
 
     private final static String REDIRECT_FORMAT =
@@ -29,10 +29,10 @@ public class AddingFilmServlet extends HttpServlet {
             Film addedFilm = new Film(filmTitle, filmCost, filmType);
             dao.insert(addedFilm);
             response.setStatus(response.SC_MOVED_TEMPORARILY);
-            response.setHeader("Location", String.format(REDIRECT_FORMAT, "AddFilmPages/AddFilmSuccess.html"));
+            response.setHeader("Location", String.format(REDIRECT_FORMAT, "/lab3/AddFilmPages/AddFilmSuccess.html"));
         } catch (Exception e){
             response.setStatus(response.SC_MOVED_TEMPORARILY);
-            response.setHeader("Location",String.format(REDIRECT_FORMAT,"AddFilmPages/AddFilmFail.html"));
+            response.setHeader("Location",String.format(REDIRECT_FORMAT,"/lab3/AddFilmPages/AddFilmFail.html"));
             e.printStackTrace();
         }
 

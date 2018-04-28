@@ -15,11 +15,6 @@ import java.io.StringReader;
 
 @ServerEndpoint("/stock")
 public class WebSocketServer {
-    @OnOpen
-    public void onOpen(Session session) throws IOException {
-        //  session.getBasicRemote().sendText("Соединение установлено. Прим. команды (price:BTC:RUB)");
-    }
-
     @OnError
     public void onError(Session session, Throwable throwable) {
         try {

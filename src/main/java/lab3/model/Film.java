@@ -1,4 +1,4 @@
-package lab3.Data;
+package lab3.model;
 
 public class Film {
     private String title;

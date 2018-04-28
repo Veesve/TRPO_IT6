@@ -1,6 +1,6 @@
 package lab3.DAL;
 
-import lab3.Data.Film;
+import lab3.model.Film;
 
 
 import java.sql.*;

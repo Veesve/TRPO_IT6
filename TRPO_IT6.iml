@@ -12,7 +12,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_9">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -26,5 +26,19 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.0.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: jstl:jstl:1.2" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.39" level="project" />
+    <orderEntry type="library" name="Maven: javax.enterprise:cdi-api:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.interceptor:jboss-interceptor-api:1.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.annotation:jsr250-api:1.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.json:javax.json-api:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-websocket:9.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-servlet-api:9.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-websocket-api:9.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:9.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-util:9.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:7.0.47" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish:javax.json:1.0.4" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="moment" level="application" />
   </component>
 </module>

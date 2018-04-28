@@ -1,4 +1,4 @@
-package lab3.Data;
+package lab3.model;
 
 public enum FilmTypes {
     Horror, Action, Comedy, Thriller

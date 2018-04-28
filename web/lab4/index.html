@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Лента валюта</h1>
+    <h2>Выбор валюты</h2>
+    <hr>
+    <table class="table  table-bordered table-hover table-striped" cellpadding="5" cellspacing="5" align="center">
+        <tr>
+            <th>Вид криптовалюты</th>
+            <th>Вид валюты</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input value="BTC" id="1" type="text"
+                       title="1-ая валюта"></td>
+            <td><input value="USD" id="2" type="text" title="2-ая валюта"></td>
+            <td align="center">
+                <button class="btn btn-primary btn" onclick="openSocket()">Вывод</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <h2>Живая лента</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <table border="1" class="table table-bordered table-hover table-striped" id="trade_table">
+                <thead>
+                <tr>
+                    <th>Вид криптовалюты</th>
+                    <th>Вид валюты</th>
+                    <th>Курс</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="trade_table_body">
+
+                <tr id="waiting">
+                    <td colspan="6">Ожидание подключения к серверу...</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+<script type="text/javascript" src="wscurr.js"></script>
+</body>
+</html>

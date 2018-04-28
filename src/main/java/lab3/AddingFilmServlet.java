@@ -4,8 +4,8 @@ package lab3;
 
 
 import lab3.DAL.DAO;
-import lab3.Data.Film;
-import lab3.Data.FilmTypes;
+import lab3.model.Film;
+import lab3.model.FilmTypes;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

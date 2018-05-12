@@ -7,9 +7,9 @@ import java.sql.*;
 
 public class DAO {
     private static DAO instance;
-    private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private static final String DB_URL ="jdbc:mysql://localhost:3306/filmstore";
-    private static final String USER = "root";
+    private static final String JDBC_DRIVER = "org.postgresql.Driver";
+    private static final String DB_URL ="jdbc:postgresql://localhost:5432/filmstore";
+    private static final String USER = "postgres";
     private static final String PASS = "qwerty123";
     private DAO(){ }
     public static DAO getInstance(){
@@ -25,7 +25,7 @@ public class DAO {
         Connection conn = DriverManager.getConnection(DB_URL,USER,PASS);
         PreparedStatement inserting = conn.prepareStatement("INSERT INTO films VALUES( ?, ?, ?)");
         inserting.setString(1, film.getTitle());
-        inserting.setString(2,""+film.getCost());
+        inserting.setInt(2,film.getCost());
         inserting.setString(3,""+film.getType());
         inserting.executeUpdate();
         inserting.close();

@@ -14,8 +14,8 @@
 
 </head>
 <body>
-<sql:setDataSource var="filmList" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/filmstore"
-                   user = "root" password="qwerty123"/>
+<sql:setDataSource var="filmList" driver="org.postgresql.Driver" url="jdbc:postgresql://localhost:5432/filmstore"
+                   user = "postgres" password="qwerty123"/>
 <sql:query var="result" dataSource="${filmList}">
     SELECT * FROM films;
 </sql:query>
@@ -33,7 +33,6 @@
 </aside>
 <div>
     <table border="0" align="center" cellpadding="10" cellspacing="5">
-        <div>
         <tr>
             <th>Title</th>
             <th>Cost</th>
@@ -42,11 +41,10 @@
         <c:forEach var="row" items="${result.rows}">
             <tr>
                 <td><c:out value="${row.title}"/></td>
-                <td><c:out value="${row.cost}"/></td>
+                <td><c:out value="${row.price}"/></td>
                 <td><c:out value="${row.type}"/></td>
             </tr>
         </c:forEach>
-        </div>
     </table>
 </div>
 </body>

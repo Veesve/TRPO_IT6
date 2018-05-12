@@ -15,6 +15,7 @@ import java.io.StringReader;
 
 @ServerEndpoint("/stock")
 public class WebSocketServer {
+
     @OnError
     public void onError(Session session, Throwable throwable) {
         try {

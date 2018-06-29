@@ -62,7 +62,7 @@ public class DateParser {
                 "(([01][0123456789])|(2[0123])):" +//hours
                 "[012345]\\d:" +//minutes
                 "[012345]\\d");//seconds
-
+                System.out.println("Fork testing");
         Pattern emailPattern = Pattern.compile("\\w{5,20}@" + //any symbols combination at least 5 symbol but not more than 20
                 "(gmail|ya|yandex|mail)" +
                 "(\\.com|\\.ru)"); //white list of domens. Could be extended or changed with offered pattern
